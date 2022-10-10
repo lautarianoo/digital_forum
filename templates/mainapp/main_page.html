@@ -1,4 +1,57 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
+    <section id="feature">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
+						<h2 class="slang-forum">Cделай шаг в будущее навстречу новейшим информационным технологиям!</h2>
+						<h5 style="margin-top: 50px">Digital Forum – площадка digital-событий, содействующая развитию цифровой экономики Челябинской области и в России.</h5>
+					</div>
+					<div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
+						<img src="{% static "images/software-img.png" %}" class="img-responsive" alt="feature img">
+					</div>
+				</div>
+			</div>
+		</section>
+
+    <section id="divider">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+                        <img class="fa" src="{% static "images/cyber-security.png" %}" width="100" height="100">
+						<h3 class="text-uppercase">КИБЕРБЕЗОПАСНОСТЬ</h3>
+					</div>
+                    <div class="col-md-4 wow fadeInUp templatemo-box animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp; ">
+                        <img class="fa" src="{% static "images/machine-learning.png" %}" width="100" height="80">
+						<h3 class="text-uppercase">МАШИННОЕ ОБУЧЕНИЕ</h3>
+					</div>
+					<div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+                        <img style="margin-top: 20px" class="fa" src="{% static "images/mobile_software.png" %}" width="100" height="100">
+						<h3 class="text-uppercase">РАЗРАБОТКА МОБИЛЬНОГО ПО</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    <section id="feature">
+			<div class="container">
+				<div class="row">
+                    <div class="col-md-2">
+
+                    </div>
+					<div class="col-md-8 wow fadeInLeft" data-wow-delay="0.6s" style="display: flex;flex-direction: column; align-items: center;  justify-content: center">
+						<h2 class="slang-forum">Примите участие на мероприятии Digital Forum!</h2>
+						<h5 style="margin-top: 20px; text-align: center;">Мероприятия состоиться с 1 по 3 декабря 2022 года.</h5>
+                        <a class="btn-digital btn-primary" href="{% url "take_part" %}" style="margin-top: 15px; margin-bottom: 15px">
+                            Учавствовать
+                        </a>
+					</div>
+                    <div class="col-md-2">
+
+                    </div>
+				</div>
+			</div>
+		</section>
 {% endblock content %}

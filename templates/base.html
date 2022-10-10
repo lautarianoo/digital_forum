@@ -1,10 +1,69 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Digital Forum - Главная{% endblock title %}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="{% static "css/animate.min.css" %}">
+
+		<!-- bootstrap css -->
+		<!-- font-awesome -->
+
+		<!-- google font -->
+
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="{% static "css/templatemo-style.css" %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+
+    <!-- custom css -->
+
+
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "css/main-css.css" %}">
 </head>
 <body>
-
+    <div class="wrapper-digital">
+        <header>
+            <div class="digital-header">
+                <div class="container">
+                    <div class="header-content">
+                    <h1 class="digital-title-header">DIGITAL FORUM</h1>
+                    <ul class="header-ul">
+                        <li><a href="{% url "main_page" %}" style="text-decoration: none; color: #fff;">Главная</a></li>
+                        <li><a href="{% url "questions" %}" style="text-decoration: none; color: #fff;">Вопросы</a></li>
+                        <li><a href="{% url "about_us" %}" style="text-decoration: none; color: #fff;">О нас</a></li>
+                    </ul>
+                    </div>
+                        <div style="display: flex; align-items: center; justify-content: center">
+                            <div class="">
+                                <a class="btn-digital-header btn-primary" href="{% url 'take_part' %}">Учавствовать в мероприятии</a>
+                            </div>
+                        </div>
+                </div>   
+            </div>
+        </header>
+        <main>
+            <div class="main-digital">
+                    {% block content %}
+                    {% endblock content %}
+            </div>
+        </main>
+        <footer>
+            <div class="footer-digital">
+                <div class="container">
+                    <div class="main-footer">
+                    <div class="copyright">
+                        <p>2022 © Digital Forum</p>
+                    </div>
+                    </div>    
+                </div>    
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

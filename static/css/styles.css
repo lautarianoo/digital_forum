@@ -1,0 +1,173 @@
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper-digital {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.digital-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background: linear-gradient(to right,#1A2980 0,#26D0CE 100%) no-repeat;
+	color: white;
+	padding: 10px;
+	
+	width: 100%;
+	height: 22vh;
+}
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.digital-title-header {
+	font-weight: bold;
+}
+
+.header-ul {
+	margin: 0;
+	padding: 0;
+	margin-top: 1vh;
+}
+
+.header-ul li {
+	display: inline;
+	margin-right: 20px;
+	font-weight: bold;
+	font-size: large;
+}
+
+.footer-digital {
+	background: linear-gradient(to left,#1A2980 0,#26D0CE 100%) no-repeat;
+	position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 12vh;
+  padding: 28px 0 48px;
+  margin: 0 0 0;
+  color: #fff;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 90%;
+}
+
+.copyright {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: auto;
+  width: 100%;
+  height: 20%;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(255,255,255,.7);
+  text-align: center;
+}
+
+
+.main-digital {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+}
+
+.slang-forum {
+    font-size: 35px;
+    line-height: 40px;
+    color: #26547c;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+.btn-digital {
+  display: inline-block;
+  font-size: small;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 1.5rem 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  border-radius: 1rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-digital-header {
+    display: inline-block;
+  font-size: small;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 1rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .btn-digital {
+    transition: none;
+  }
+}
+
+.btn-digital:hover, .btn-digital:focus {
+  text-decoration: none;
+}
+
+.btn-digital:focus, .btn-digital.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-digital.disabled, .btn-digital:disabled {
+  opacity: 0.65;
+}
+
+.btn-digital:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+a.btn-digital.disabled,
+fieldset:disabled a.btn-digital {
+  pointer-events: none;
+}
+
+.questions-digital {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

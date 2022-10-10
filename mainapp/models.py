@@ -27,23 +27,3 @@ class QuestionAnswer(models.Model):
         verbose_name="Часто задаваемый вопрос"
         verbose_name_plural="Часто задаваемые вопросы"
 
-EVENTS_CATEGORY = (
-    ("ai", "Машинное обучение"),
-    ("web", "Веб-дизайн"),
-    ("mobile", "Разработка мобильных приложений")
-)
-
-class Event(models.Model):
-
-    title = models.CharField("Название мероприятия", max_length=70)
-    members = models.ManyToManyField(ParticipantEvent, verbose_name="Участники", related_name="event")
-    description = RichTextUploadingField("Описание")
-    category = models.CharField("Категория мероприятия", choices=EVENTS_CATEGORY, max_length=40)
-    date_event = models.DateTimeField("Вреия проведения мероприятия", auto_now_add=True)
-
-    def __str__(self):
-        return f"{self.title}"
-
-    class Meta:
-        verbose_name = "Мероприятие"
-        verbose_name_plural = "Мероприятия"

@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import ParticipantEvent, QuestionAnswer, Event
+from .models import ParticipantEvent, QuestionAnswer
 
 admin.site.register(ParticipantEvent)
 admin.site.register(QuestionAnswer)
-admin.site.register(Event)
